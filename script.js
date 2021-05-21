@@ -41,9 +41,14 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`Makasih ya udah mau jadi pacar ${sender}`).then(function () }
-              
-                 else if (result.isDenied) {
+              Swal.fire(`Makasih ya udah mau jadi pacar ${sender}`).then(function ()
+                        })
+                      }
+                    })
+                  })
+                })
+              })
+            }else if (result.isDenied) {
               Swal.fire(`Yakin ga suka sama ${sender}?`, '', 'error').then(function () {
                 Swal.fire('Yaudah deh bye!')
               })
