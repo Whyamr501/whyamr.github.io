@@ -47,7 +47,8 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           Swal.fire(`Terakhir deh ${nama}`).then(function () {
                             Swal.fire('Coba klik ikon hati kecil di paling bawah dong')
                           })
-                        }
+                        })
+                      }
                     })
                   })
                 })
