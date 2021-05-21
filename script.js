@@ -44,13 +44,10 @@ document.querySelector(".tombol").addEventListener('click', function () {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
               Swal.fire(`Aww, Jadi Malu`).then(function () {
-                          Swal.fire(`Terakhir deh ${nama}`).then(function () {
-                            Swal.fire('Coba klik ikon hati kecil di paling bawah dong')
-                          })
-                        })
-                      }
+               Swal.fire(`Terakhir deh ${nama}`).then(function () {
+                Swal.fire('Coba klik ikon hati kecil di paling bawah dong')
                     })
-                  })
+                   }
                 })
               })
             } else if (result.isDenied) {
