@@ -15,7 +15,9 @@ footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/whyamr_/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Halo Gais", "Aku ada pertanyaan nih buat kamu", "question").then(function () {
+  Swal.fire("Hallo Gais", "Aku ada pertanyaan nih buat kamu", "question").then(function () {
+    Swal.fire("Jawab yang jujur ya!").then(function () {
+      Swal.fire("Awas aja kalo boong!!", "", "error").then(function () {
 
         const {
           value: name
@@ -33,15 +35,15 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }
         }).then(function () {
           const pertanyaan = Swal.fire({
-            title: `${nama} sayang ga sama ${sender}?`,
+            title: `${nama} mau ga jadi pacar ${sender}?`,
             showDenyButton: true,
             showCancelButton: false,
-            confirmButtonText: `Sayang`,
+            confirmButtonText: `Mau`,
             denyButtonText: `Gak`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`Aww, Jadi Malu`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
